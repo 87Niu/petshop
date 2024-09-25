@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: petshop
+  datasource:
+    url: jdbc:mysql://1.92.124.58:3306/petshop
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  data:
+    redis:
+      port: 6379
+      host: 1.92.124.58
+      password: 123456
+      database: 0
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: Auto
+petshop:
+  path: /Users/nn/Documents/projects/petshop/src/main/resources/
